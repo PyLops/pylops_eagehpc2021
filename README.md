@@ -13,6 +13,8 @@ The material contained in this repository has been used to produce the figures i
 
 - ``SeismicInversion-float32.*``: same as ``SeismicInversion.*`` using arrays type float32
 
+- ``IBEX``: figures and log files for different runs
+
 For all cases 3 files have been provided: 
 
 - ``.ipynb``: jupyter notebook
@@ -21,5 +23,5 @@ For all cases 3 files have been provided:
 
 - ``.sh``: shell script to run the python script
 
-
-All computations are run in the [IBEX](https://www.hpc.kaust.edu.sa/ibex) Supercomputer at KAUST.
+Notebooks are run on a personal machine with Quadro RTX 4000 GPU, whilst all other computations are run in 
+the [IBEX](https://www.hpc.kaust.edu.sa/ibex) Supercomputer at KAUST.
