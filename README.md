@@ -11,7 +11,7 @@ The material contained in this repository has been used to produce the figures i
 
 - ``SeismicInversion.*``: timing of PyLops post- and pre-stack inversion using arrays of type float64
 
-- ``SeismicInversion-float32.ipynb``: same as ``SeismicInversion.*`` using arrays type float32
+- ``SeismicInversion-float32.*``: same as ``SeismicInversion.*`` using arrays type float32
 
 For all cases 3 files have been provided: 
 
