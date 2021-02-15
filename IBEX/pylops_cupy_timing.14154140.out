@@ -1,0 +1,153 @@
+Loaded cuda: /sw/csgv/cuda/10.2.89/bin/nvcc /sw/csgv/cuda/10.2.89/bin/nvcc
+/sw/csgv/cuda/10.2.89
+Sun Feb 14 11:03:57 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 455.45.01    Driver Version: 455.45.01    CUDA Version: 11.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:1B:00.0 Off |                    0 |
+| N/A   32C    P0    43W / 300W |      0MiB / 32510MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                48
+On-line CPU(s) list:   0-47
+Thread(s) per core:    1
+Core(s) per socket:    24
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 85
+Model name:            Intel(R) Xeon(R) Platinum 8260 CPU @ 2.40GHz
+Stepping:              7
+CPU MHz:               3578.906
+CPU max MHz:           3900.0000
+CPU min MHz:           1000.0000
+BogoMIPS:              4800.00
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              1024K
+L3 cache:              36608K
+NUMA node0 CPU(s):     0-23
+NUMA node1 CPU(s):     24-47
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 invpcid_single intel_ppin intel_pt ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts pku ospke avx512_vnni md_clear spec_ctrl intel_stibp flush_l1d arch_capabilities
+Timing Diagonal
+Timing MatrixMult
+Timing Identity
+Timing Zero
+Timing Sum
+Timing FirstDerivative
+Timing SecondDerivative
+Timing Laplacian
+Timing Gradient
+Timing CausalIntegration
+Timing Flip
+Timing Pad
+Timing Roll
+Timing Symmetrize
+Timing Restriction
+Timing Transpose
+Timing FFT
+Timing FFT2D
+Timing FFTND
+Timing Convolve1D
+Timing Convolve2D
+Timing ConvolveND
+Timing ChirpRadon2D
+Timing ChirpRadon3D
+Timing Interp
+Timing Bilinear
+Timing Fredholm1
+               Method  Kind     Speedup
+0            Bilinear   Adj   62.801610
+1            Bilinear  Forw    6.722651
+2   CausalIntegration   Adj   40.983038
+3   CausalIntegration  Forw   39.420870
+4        ChirpRadon2D   Adj  141.279245
+5        ChirpRadon2D  Forw  273.865423
+6        ChirpRadon3D   Adj   91.586242
+7        ChirpRadon3D  Forw  145.433315
+8          Convolve1D   Adj  212.647773
+9          Convolve1D  Forw  233.552884
+10         Convolve2D   Adj   50.069764
+11         Convolve2D  Forw   51.940722
+12         ConvolveND   Adj   91.856896
+13         ConvolveND  Forw   93.747208
+14           Diagonal   Adj   89.301194
+15           Diagonal  Forw  112.625214
+16                FFT   Adj  269.470514
+17                FFT  Forw  391.217238
+18              FFT2D   Adj   83.079340
+19              FFT2D  Forw  181.372645
+20              FFTND   Adj   39.107555
+21              FFTND  Forw  104.503586
+22    FirstDerivative   Adj   27.383269
+23    FirstDerivative  Forw   44.359081
+24               Flip   Adj   26.392305
+25               Flip  Forw   25.989799
+26          Fredholm1   Adj   10.133198
+27          Fredholm1  Forw   22.342793
+28           Gradient   Adj   32.828478
+29           Gradient  Forw   45.126538
+30           Identity   Adj    0.635486
+31           Identity  Forw   81.294843
+32             Interp   Adj    2.787787
+33             Interp  Forw    1.330312
+34          Laplacian   Adj   33.252263
+35          Laplacian  Forw   44.966611
+36         MatrixMult   Adj    4.616187
+37         MatrixMult  Forw   43.212670
+38                Pad   Adj  108.941416
+39                Pad  Forw   50.187556
+40        Restriction   Adj    3.091443
+41        Restriction  Forw    1.457045
+42               Roll   Adj   38.447388
+43               Roll  Forw   42.369855
+44   SecondDerivative   Adj   37.777378
+45   SecondDerivative  Forw   46.644251
+46                Sum   Adj   29.366053
+47                Sum  Forw   10.033073
+48         Symmetrize   Adj  122.915557
+49         Symmetrize  Forw  139.391168
+50          Transpose   Adj   52.936157
+51          Transpose  Forw   59.770643
+52               Zero   Adj    1.025473
+53               Zero  Forw    0.961298
+Average speed-up operators 74.04726485715538
+Timing PoststackLinearModelling_2D
+Timing PoststackLinearModelling_3D
+Timing PrestackLinearModelling_2D
+Timing PrestackLinearModelling_3D
+                        Method  Kind     Speedup
+0  PoststackLinearModelling_2D   Adj   15.472857
+1  PoststackLinearModelling_2D  Forw   21.332209
+2  PoststackLinearModelling_3D   Adj   13.456420
+3  PoststackLinearModelling_3D  Forw   17.805075
+4   PrestackLinearModelling_2D   Adj   65.207057
+5   PrestackLinearModelling_2D  Forw  191.713584
+6   PrestackLinearModelling_3D   Adj   26.989495
+7   PrestackLinearModelling_3D  Forw   56.531610
+Average speed-up Convmodelling 51.063538358594066
+Timing PhaseShift_2D
+Timing PhaseShift_3D
+          Method  Kind     Speedup
+0  PhaseShift_2D   Adj  100.900495
+1  PhaseShift_2D  Forw  114.981439
+2  PhaseShift_3D   Adj  182.315937
+3  PhaseShift_3D  Forw  208.919510
+Average speed-up Phase shift 151.77934511964048

@@ -1,0 +1,123 @@
+Loaded cuda: /sw/csgv/cuda/10.2.89/bin/nvcc /sw/csgv/cuda/10.2.89/bin/nvcc
+/sw/csgv/cuda/10.2.89
+Sun Feb 14 17:26:29 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 455.45.01    Driver Version: 455.45.01    CUDA Version: 11.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:88:00.0 Off |                    0 |
+| N/A   28C    P0    41W / 300W |      0MiB / 32510MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                48
+On-line CPU(s) list:   0-47
+Thread(s) per core:    1
+Core(s) per socket:    24
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 85
+Model name:            Intel(R) Xeon(R) Platinum 8260 CPU @ 2.40GHz
+Stepping:              7
+CPU MHz:               2399.853
+CPU max MHz:           3900.0000
+CPU min MHz:           1000.0000
+BogoMIPS:              4800.00
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              1024K
+L3 cache:              36608K
+NUMA node0 CPU(s):     0-23
+NUMA node1 CPU(s):     24-47
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 invpcid_single intel_ppin intel_pt ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts pku ospke avx512_vnni md_clear spec_ctrl intel_stibp flush_l1d arch_capabilities
+<class 'cupy.core.core.ndarray'> <class 'cupy.core.core.ndarray'> float64 float64
+float32 float32 float32
+Dot test passed, v^T(Opu)=-18.550810 - u^T(Op^Tv)=-18.550819
+Dot test passed, v^T(Opu)=42.137597 - u^T(Op^Tv)=42.137597
+<6321x903 LinearOperator with dtype=float32> <6321x903 MatrixMult with dtype=float32>
+Dot test passed, v^T(Opu)=5.953017 - u^T(Op^Tv)=5.953013
+Dot test passed, v^T(Opu)=41.189425 - u^T(Op^Tv)=41.189425
+<6321x903 LinearOperator with dtype=float32> <6321x903 MatrixMult with dtype=float32>
+float32 float32
+float32 float32 float32 float32
+float32 float32 float32 float32
+<6321x41 VStack with dtype=float32> <6321x41 VStack with dtype=float32>
+Dot test passed, v^T(Opu)=-6.445270 - u^T(Op^Tv)=-6.445270
+Dot test passed, v^T(Opu)=-2.541509 - u^T(Op^Tv)=-2.541509
+float32 float32
+float32 float32
+float32 float32
+float32 float32
+Dot test passed, v^T(Opu)=20.337984 - u^T(Op^Tv)=20.337978
+Dot test passed, v^T(Opu)=-24.385499 - u^T(Op^Tv)=-24.385499
+<301x301 LinearOperator with dtype=float32> <301x301 MatrixMult with dtype=float32> float32
+float32 float32
+float32 float32 float32 float32
+float32 float32 float32
+Dot test passed, v^T(Opu)=216.035593 - u^T(Op^Tv)=216.035290
+Dot test passed, v^T(Opu)=1981.800303 - u^T(Op^Tv)=1981.800303
+5.066395e-07
+float32 float32
+1.9073486e-06
+<440000x440000 LinearOperator with dtype=float32>
+float32 float32 float32
+float32 float32 float32 float32 float32
+Dot test passed, v^T(Opu)=3374.553106 - u^T(Op^Tv)=3374.551116
+Dot test passed, v^T(Opu)=-1244.670956 - u^T(Op^Tv)=-1244.670034
+float32 float32
+float32
+float32 float32 float32
+3D Poststack modelling with nt=1000, nx=10, ny=200....
+3D Poststack modelling with nt=1000, nx=10, ny=300....
+3D Poststack modelling with nt=1000, nx=10, ny=400....
+3D Poststack modelling with nt=1000, nx=10, ny=500....
+3D Poststack modelling with nt=1000, nx=10, ny=600....
+3D Poststack modelling with nt=1000, nx=10, ny=700....
+3D Poststack modelling with nt=1000, nx=10, ny=800....
+3D Poststack modelling with nt=1000, nx=10, ny=900....
+3D Poststack modelling with nt=1000, nx=10, ny=1000....
+3D Poststack modelling with nt=1000, nx=10, ny=1100....
+3D Poststack modelling with nt=1000, nx=10, ny=1200....
+3D Poststack modelling with nt=1000, nx=10, ny=1300....
+3D Poststack modelling with nt=1000, nx=10, ny=1400....
+Speedup poststack inversion [16.16489854 32.61180216 35.62231028 38.64697406 38.52719356 38.2249784
+ 41.15789674 40.68631275 40.31378179 35.38778132 41.22984667 39.34298372
+ 40.35447367]
+Dot test passed, v^T(Opu)=1189.335579 - u^T(Op^Tv)=1189.336635
+Dot test passed, v^T(Opu)=2415.955631 - u^T(Op^Tv)=2415.955631
+float32 float32
+1.7853454e-06
+1.1444092e-05
+float32
+3D Prestack modelling with nt=1000, nx=10, ny=200....
+3D Prestack modelling with nt=1000, nx=10, ny=300....
+3D Prestack modelling with nt=1000, nx=10, ny=400....
+3D Prestack modelling with nt=1000, nx=10, ny=500....
+3D Prestack modelling with nt=1000, nx=10, ny=600....
+3D Prestack modelling with nt=1000, nx=10, ny=700....
+3D Prestack modelling with nt=1000, nx=10, ny=800....
+3D Prestack modelling with nt=1000, nx=10, ny=900....
+3D Prestack modelling with nt=1000, nx=10, ny=1000....
+3D Prestack modelling with nt=1000, nx=10, ny=1100....
+3D Prestack modelling with nt=1000, nx=10, ny=1200....
+3D Prestack modelling with nt=1000, nx=10, ny=1300....
+3D Prestack modelling with nt=1000, nx=10, ny=1400....
+Speedup prestack inversion [25.51610965 28.81825    27.57335239 27.81959592 27.33552497 26.85661477
+ 26.59905067 25.87455846 25.00611524 21.36686722 23.69627362 21.51680916
+ 20.87621357]
